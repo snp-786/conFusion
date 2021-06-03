@@ -1,14 +1,14 @@
-$lt-gray: #ddd;
-$background-dark: #512DA8;
-$background-light: #9575CD;
-$background-pale: #D1C4E9;
+$lt-gray:#ddd;
+$background-dark:#512da8;
+$background-light:#9575cd;
+$background-pale:#d1c4e9;
 
-// Height variables
-$carousel-item-height: 300px;
-@mixin zero-margin($pad-up-dn, $pad-left-right) {
+$carousel-item-height:300px;
+@mixin zero-margin ($pad-up-dn, $pad-left-right) {
 	margin:0px auto;
 	padding: $pad-up-dn $pad-left-right;
 }
+
 .row-header{
     @include zero-margin(0px,0px);
 }
@@ -51,23 +51,31 @@ body{
     border-bottom: 1px solid $lt-gray;
     padding: 10px;
 }
-.carousel {
-    background:$background-dark;
-
-    .carousel-item {
-        height: $carousel-item-height;
-        img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            min-height: 300px;
-        }
+#reserveTable{
+    .modal-header{
+      background-color: $background-dark;
+    }
+    .modal-title{
+        color: floralwhite;
+    }
+    .modal-body{
+        background-color: $background-pale;
+    }
+    .close{
+        color: floralwhite;
     }
 }
-
-#carouselButton {
-    right:0px;
-    position: absolute;
-    bottom: 0px;
-    z-index: 1;
+#loginModal{
+    .modal-header{
+      background-color: $background-dark;
+    }
+    .modal-title{
+        color: floralwhite;
+    }
+    .modal-body{
+        background-color: $background-pale;
+    }
+    .close{
+        color: floralwhite;
+    }
 }
